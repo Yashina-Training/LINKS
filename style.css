@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: red;
+}
+
+.table-menu {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.table-menu td {
+  padding: 0 15px;
+  border-right: 3px solid red;
+}
+
+.table-menu td:last-child {
+  border-right: 0;
+}
+
+.inline-menu {
+  margin-bottom: 30px;
+  font-size: 0;
+}
+
+.inline-menu a {
+  padding: 0 15px;
+  border-right: 3px solid red;
+  font-size: 18px;
+}
+
+.inline-menu a:last-child {
+  border-right: 0;
+}
+
+.float-menu {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.float-menu div {
+  max-width: 155px;
+  float: left;
+  padding: 0 15px;
+  border-right: 3px solid red;
+}
+
+.float-menu div:last-child {
+  border-right: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.inline-block-menu {
+  margin-bottom: 30px;
+  font-size: 0;
+}
+
+.inline-block-menu a {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.inline-block-menu a::after {
+  content: "";
+  display: inline-block;
+  margin: 0 0 -5px 15px;
+  width: 3px;
+  height: 22px;
+  background: red;
+}
+
+.inline-block-menu a:last-child::after {
+  display: none;
+}
